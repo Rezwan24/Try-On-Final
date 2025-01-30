@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.freshstart.controllers.ResultController">
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f0f7ff;">
+            <children>
+                <VBox alignment="CENTER" layoutX="290.0" layoutY="30.0" prefHeight="600.0" prefWidth="700.0" spacing="20" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 20;">
+                    <Label style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #4a90e2;" text="See how it gonna Look" />
+                    <ImageView fx:id="selectedImageView" fitHeight="500.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" />
+                    <Button onAction="#onBackButtonClick" style="-fx-background-color: #4a90e2; -fx-text-fill: white; -fx-font-size: 16; -fx-padding: 10 20; -fx-background-radius: 5;" text="Back to Try On" />
+                </VBox>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

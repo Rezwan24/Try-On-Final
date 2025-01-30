@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.freshstart.controllers.LoginController">
+   <left>
+      <AnchorPane prefHeight="720.0" prefWidth="540.0" style="-fx-background-color: linear-gradient(to bottom right, #6c5ce7, #a367fc);" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="270.0" fitWidth="290.0" layoutX="125.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Tryon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="125.0" layoutY="520.0" text="Welcome to TryOn" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="125.0" layoutY="570.0" text="Your virtual wardrobe awaits" textFill="WHITE">
+               <font>
+                  <Font name="System" size="18.0" />
+               </font>
+            </Label>
+            <!-- Add a subtle overlay gradient -->
+            <AnchorPane opacity="0.1" prefHeight="720.0" prefWidth="540.0" style="-fx-background-color: linear-gradient(to bottom, transparent, #000000);" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="720.0" prefWidth="756.0" style="-fx-background-color: linear-gradient(to bottom right, #ffffff, #f8f9fa);" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="170.0" layoutY="151.0" text="Username">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#6c5ce7" />
+                        <Stop color="#a367fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="170.0" layoutY="251.0" text="Password">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#6c5ce7" />
+                        <Stop color="#a367fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="170.0" layoutY="180.0" prefHeight="40.0" prefWidth="400.0" promptText="Enter Username" style="-fx-background-color: #ffffff; -fx-border-color: linear-gradient(to right, #6c5ce7, #a367fc); -fx-border-width: 2; -fx-border-radius: 5; -fx-background-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="170.0" layoutY="280.0" prefHeight="40.0" prefWidth="400.0" promptText="Enter Password" style="-fx-background-color: #ffffff; -fx-border-color: linear-gradient(to right, #6c5ce7, #a367fc); -fx-border-width: 2; -fx-border-radius: 5; -fx-background-radius: 5;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+
+            <Button fx:id="loginButton" alignment="CENTER" layoutX="170.0" layoutY="380.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="45.0" prefWidth="400.0" style="-fx-background-color: linear-gradient(to right, #6c5ce7, #a367fc); -fx-background-radius: 5; -fx-effect: dropshadow(three-pass-box, rgba(108,92,231,0.3), 10, 0, 0, 0);" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="RegisterButton" alignment="CENTER" layoutX="170.0" layoutY="480.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" prefHeight="45.0" prefWidth="400.0" style="-fx-background-color: transparent; -fx-border-color: linear-gradient(to right, #6c5ce7, #a367fc); -fx-border-width: 2; -fx-border-radius: 5; -fx-background-radius: 5;">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#6c5ce7" />
+                        <Stop color="#a367fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <text>Register Now</text>
+            </Button>
+
+            <Label fx:id="errorMessage" layoutX="170.0" layoutY="335.0" textFill="#e74c3c">
+               <font>
+                  <Font name="System" size="14.0" />
+               </font>
+            </Label>
+
+            <Label layoutX="355.0" layoutY="445.0" text="OR" textFill="#7f8c8d">
+               <font>
+                  <Font name="System" size="14.0" />
+               </font>
+            </Label>
+            <Text layoutX="310.0" layoutY="560.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Try on your style">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#6c5ce7" />
+                        <Stop color="#a367fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Label layoutX="170.0" layoutY="65.0" text="LOGIN">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#6c5ce7" />
+                        <Stop color="#a367fc" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

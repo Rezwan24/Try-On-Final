@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #f0f7ff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.freshstart.controllers.DashboardController">
+   <top>
+      <AnchorPane prefHeight="100.0" prefWidth="1280.0" style="-fx-background-color: #4a90e2; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 2);">
+         <children>
+            <ImageView fitHeight="68.0" fitWidth="62.0" layoutX="21.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/shirt.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="401.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's try these on">
+               <font>
+                  <Font name="HP Simplified Bold" size="65.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7789473533630371" green="0.10385964810848236" blue="0.7226900458335876" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.38595762848854065" green="0.10779999941587448" blue="0.7699999809265137" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Text fill="#f0f7ff" layoutX="106.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Try">
+               <font>
+                  <Font name="HP Simplified Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#f0f7ff" layoutX="108.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On">
+               <font>
+                  <Font name="HP Simplified Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="614.0" prefWidth="115.0" style="-fx-background-color: #7fb2e5; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 2, 0);">
+         <children>
+            <Button layoutX="21.0" layoutY="178.0" mnemonicParsing="false" onAction="#onHomeButtonClick" prefHeight="59.0" prefWidth="30.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/Hom3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="21.0" layoutY="258.0" mnemonicParsing="false" onAction="#onHistoryButtonClick" prefHeight="62.0" prefWidth="47.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/history.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="21.0" layoutY="547.0" mnemonicParsing="false" onAction="#onLogoutButtonClick" prefHeight="58.0" prefWidth="52.0" style="-fx-background-radius: 30; -fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/power-off.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" style="-fx-background-color: #f0f7ff;">
+         <content>
+            <AnchorPane prefHeight="1857.0" prefWidth="1165.0" style="-fx-background-color: #e6f2ff;">
+               <children>
+                  <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="620.0" prefWidth="365.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                     <children>
+                        <ImageView fitHeight="331.0" fitWidth="268.0" layoutX="57.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/greenpolo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="87.0" layoutY="421.0" text="Green T-Shirt" textFill="#1b288c">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="144.0" layoutY="500.0" mnemonicParsing="false" onAction="#onAnyTryOnButtonClick" style="-fx-background-color: #4a90e2; -fx-text-fill: white; -fx-background-radius: 20;" text="Try On">
+                           <font>
+                              <Font name="System" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="405.0" layoutY="20.0" prefHeight="620.0" prefWidth="365.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                     <children>
+                        <ImageView fitHeight="386.0" fitWidth="336.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/blackpolo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="99.0" layoutY="417.0" text="Black T-Shirt" textFill="#676e16">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="144.0" layoutY="500.0" mnemonicParsing="false" onAction="#onAnyTryOnButtonClick" style="-fx-background-color: #4a90e2; -fx-text-fill: white; -fx-background-radius: 20;" text="Try On">
+                           <font>
+                              <Font name="System" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="790.0" layoutY="20.0" prefHeight="620.0" prefWidth="365.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                     <children>
+                        <ImageView fitHeight="322.0" fitWidth="298.0" layoutX="33.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/purplepolo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="87.0" layoutY="419.0" text="Purple T-Shirt" textFill="#4a90e2">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="144.0" layoutY="500.0" mnemonicParsing="false" onAction="#onAnyTryOnButtonClick" style="-fx-background-color: #4a90e2; -fx-text-fill: white; -fx-background-radius: 20;" text="Try On">
+                           <font>
+                              <Font name="System" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="20.0" layoutY="660.0" prefHeight="620.0" prefWidth="365.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                     <children>
+                        <ImageView fitHeight="386.0" fitWidth="336.0" layoutX="25.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/brownpolo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="78.0" layoutY="423.0" text="Brown T-Shirt">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                           <textFill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="1.0" green="0.28148147463798523" blue="0.8562963008880615" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.0" green="0.25" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </textFill>
+                        </Label>
+                        <Button layoutX="144.0" layoutY="500.0" mnemonicParsing="false" onAction="#onAnyTryOnButtonClick" style="-fx-background-color: #4a90e2; -fx-text-fill: white; -fx-background-radius: 20;" text="Try On">
+                           <font>
+                              <Font name="System" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="405.0" layoutY="660.0" prefHeight="620.0" prefWidth="365.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                     <children>
+                        <ImageView fitHeight="386.0" fitWidth="336.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/whitepolo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="54.0" layoutY="436.0" text="WhitePolo T-Shirt" textFill="#737373">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="132.0" layoutY="500.0" mnemonicParsing="false" onAction="#onAnyTryOnButtonClick" style="-fx-background-color: #4a90e2; -fx-text-fill: white; -fx-background-radius: 20;" text="Try On">
+                           <font>
+                              <Font name="System" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="790.0" layoutY="660.0" prefHeight="620.0" prefWidth="365.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);">
+                     <children>
+                        <ImageView fitHeight="386.0" fitWidth="336.0" layoutX="58.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/redpolo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="91.0" layoutY="420.0" text="Red T-Shirt" textFill="#1b288c">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="132.0" layoutY="500.0" mnemonicParsing="false" onAction="#onAnyTryOnButtonClick" style="-fx-background-color: #4a90e2; -fx-text-fill: white; -fx-background-radius: 20;" text="Try On">
+                           <font>
+                              <Font name="System" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
