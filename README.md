@@ -78,6 +78,10 @@ Final View:
 
 Still working on the final view section so I hope this will be done very very soon.
 
+## License
+
+This project is protected under a custom restrictive license. Copying, use, modification, or distribution without explicit permission is strictly prohibited. See the (LICENSE.md) file for details.
+
 
 
 
